@@ -13,6 +13,13 @@
 		39E5B47228B3B35A0086E5BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E5B47028B3B35A0086E5BC /* Main.storyboard */; };
 		39E5B47428B3B3660086E5BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39E5B47328B3B3660086E5BC /* Assets.xcassets */; };
 		39E5B47728B3B3660086E5BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E5B47528B3B3660086E5BC /* LaunchScreen.storyboard */; };
+		39E5B48528B3B3E10086E5BC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E5B48428B3B3E10086E5BC /* User.swift */; };
+		39E5B48728B3B4080086E5BC /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E5B48628B3B4080086E5BC /* UserPresenter.swift */; };
+		39E5B48928B3B4200086E5BC /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E5B48828B3B4200086E5BC /* UserRouter.swift */; };
+		39E5B48B28B3B44C0086E5BC /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E5B48A28B3B44C0086E5BC /* UserViewController.swift */; };
+		39E5B48F28B3B49A0086E5BC /* UserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E5B48E28B3B49A0086E5BC /* UserUseCase.swift */; };
+		39E5B49128B3B4BE0086E5BC /* UserGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E5B49028B3B4BE0086E5BC /* UserGateway.swift */; };
+		39E5B49428B3B5A00086E5BC /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E5B49328B3B5A00086E5BC /* ApiError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		39E5B47328B3B3660086E5BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39E5B47628B3B3660086E5BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39E5B47828B3B3660086E5BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39E5B48428B3B3E10086E5BC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		39E5B48628B3B4080086E5BC /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
+		39E5B48828B3B4200086E5BC /* UserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
+		39E5B48A28B3B44C0086E5BC /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		39E5B48E28B3B49A0086E5BC /* UserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUseCase.swift; sourceTree = "<group>"; };
+		39E5B49028B3B4BE0086E5BC /* UserGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGateway.swift; sourceTree = "<group>"; };
+		39E5B49328B3B5A00086E5BC /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,13 @@
 		39E5B46928B3B35A0086E5BC /* Clean */ = {
 			isa = PBXGroup;
 			children = (
+				39E5B49228B3B5970086E5BC /* Utils */,
+				39E5B48328B3B3D70086E5BC /* Entity */,
+				39E5B48228B3B3B10086E5BC /* View */,
+				39E5B48128B3B3AA0086E5BC /* Gateway */,
+				39E5B48028B3B3A50086E5BC /* UseCase */,
+				39E5B47F28B3B39F0086E5BC /* Presenter */,
+				39E5B47E28B3B39A0086E5BC /* Router */,
 				39E5B46A28B3B35A0086E5BC /* AppDelegate.swift */,
 				39E5B46C28B3B35A0086E5BC /* SceneDelegate.swift */,
 				39E5B46E28B3B35A0086E5BC /* ViewController.swift */,
@@ -65,6 +86,62 @@
 				39E5B47828B3B3660086E5BC /* Info.plist */,
 			);
 			path = Clean;
+			sourceTree = "<group>";
+		};
+		39E5B47E28B3B39A0086E5BC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				39E5B48828B3B4200086E5BC /* UserRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		39E5B47F28B3B39F0086E5BC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				39E5B48628B3B4080086E5BC /* UserPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		39E5B48028B3B3A50086E5BC /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				39E5B48E28B3B49A0086E5BC /* UserUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		39E5B48128B3B3AA0086E5BC /* Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				39E5B49028B3B4BE0086E5BC /* UserGateway.swift */,
+			);
+			path = Gateway;
+			sourceTree = "<group>";
+		};
+		39E5B48228B3B3B10086E5BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				39E5B48A28B3B44C0086E5BC /* UserViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39E5B48328B3B3D70086E5BC /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				39E5B48428B3B3E10086E5BC /* User.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		39E5B49228B3B5970086E5BC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				39E5B49328B3B5A00086E5BC /* ApiError.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +215,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39E5B48B28B3B44C0086E5BC /* UserViewController.swift in Sources */,
+				39E5B48528B3B3E10086E5BC /* User.swift in Sources */,
+				39E5B48928B3B4200086E5BC /* UserRouter.swift in Sources */,
+				39E5B49428B3B5A00086E5BC /* ApiError.swift in Sources */,
 				39E5B46F28B3B35A0086E5BC /* ViewController.swift in Sources */,
+				39E5B48F28B3B49A0086E5BC /* UserUseCase.swift in Sources */,
+				39E5B49128B3B4BE0086E5BC /* UserGateway.swift in Sources */,
 				39E5B46B28B3B35A0086E5BC /* AppDelegate.swift in Sources */,
+				39E5B48728B3B4080086E5BC /* UserPresenter.swift in Sources */,
 				39E5B46D28B3B35A0086E5BC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
